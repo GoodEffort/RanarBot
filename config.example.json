@@ -4,5 +4,6 @@
     "token": "Bot token from discord dev portal here",
     "guildId": "GuildId from Discord Server here",
     "clientId": "Client Id from Discord dev portal here",
-    "username": "username of the account running the dedicated server on the machine"
+    "username": "username of the account running the dedicated server on the machine",
+    "serverPath": "path to the dedicated server shell script"
 }
