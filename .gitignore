@@ -1,0 +1,3 @@
+config.prod.json
+config.test.json
+**/node_modules

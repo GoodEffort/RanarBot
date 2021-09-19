@@ -1,0 +1,7 @@
+{
+    "MAC": "Hardware Address Here",
+    "IP": "IP Address Here",
+    "token": "Bot token from discord dev portal here",
+    "guildId": "GuildId from Discord Server here",
+    "clientId": "Client Id from Discord dev portal here"
+}
