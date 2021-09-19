@@ -1,7 +1,6 @@
 const { Client, Intents } = require('discord.js');
 const { token, MAC, IP, username } = require('./config.test.json');
 const util = require('util');
-const { stdout } = require('process');
 const exec = util.promisify(require('child_process').exec);
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS]});
@@ -15,7 +14,6 @@ client.on('interactionCreate', async interation => {
 
     const { commandName } = interation;
     let out;
-    let ip;
 
     switch(commandName) {
         case 'poweronserver':
