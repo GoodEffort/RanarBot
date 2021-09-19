@@ -1,5 +1,5 @@
 const { Client, Intents } = require('discord.js');
-const { token, MAC, IP, username, serverPath, rsaPath } = require('./config.json');
+const { token, MAC, IP, username, serverPath } = require('./config.json');
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 
