@@ -1,5 +1,5 @@
 const { Client, Intents } = require('discord.js');
-const { token, MAC, IP } = require('./config.test.json');
+const { token, MAC, IP, username } = require('./config.test.json');
 const util = require('util');
 const { stdout } = require('process');
 const exec = util.promisify(require('child_process').exec);
@@ -27,7 +27,7 @@ client.on('interactionCreate', async interation => {
             await interation.reply(+out.stdout > 0 ? 'Server On' : 'Server Off');
         break;
         case 'startvalheim':
-            out = await exec(`ssh luke@$() "export DISPLAY=:0; nohup gnome-terminal -- /home/luke/startserver.sh &>/dev/null &"`);
+            out = await exec(`ssh ${ username }@${ IP } "export DISPLAY=:0; nohup gnome-terminal -- /home/luke/startserver.sh &>/dev/null &"`);
             await interation.reply("Attemting to start the server script!");
         break;
     }

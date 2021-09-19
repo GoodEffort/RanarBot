@@ -3,5 +3,6 @@
     "IP": "IP Address Here",
     "token": "Bot token from discord dev portal here",
     "guildId": "GuildId from Discord Server here",
-    "clientId": "Client Id from Discord dev portal here"
+    "clientId": "Client Id from Discord dev portal here",
+    "username": "username of the account running the dedicated server on the machine"
 }
